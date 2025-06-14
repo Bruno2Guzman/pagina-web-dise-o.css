@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web Personal</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Enlaces de navegación rápida -->
+  <a href="#fin_page"><strong>Ir al final de la página</strong></a>
+  <a id="inicio_page"></a>
+
+  <!-- Encabezado principal con nombre y lema -->
+  <header>
+    <h1>Bruno Josue Guzman Quincha</h1>
+    <p><strong>Desarrollando mi página web</strong></p>
+    <img src="foto.jpg" alt="Mi foto personal">
+
+    <!-- Menú de navegación interno -->
+    <nav>
+      <ul>
+        <li><a href="#sobremi">Sobre mí</a></li>
+        <li><a href="#misinteresesylogros">Intereses y logros</a></li>
+        <li><a href="#tabladehabilidades">Tabla de Habilidades</a></li>
+        <li><a href="#audiodepresentacion">Audio de mi Presentación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección "Sobre mí" -->
+  <section id="sobremi">
+    <h2>1. Sobre mí</h2>
+    <p>Soy <strong>Bruno Guzman</strong>, me gusta aprender nuevos lenguajes de programación y practicarlos. Ahora estoy aprendiendo el <strong><mark>diseño y la programación</mark></strong><em> de una página web.</em></p>
+  </section>
+
+  <!-- Lista de intereses o logros -->
+  <section id="misinteresesylogros">
+    <h3>2. Mis Intereses y logros</h3>
+    <ul>
+      <li>Desarrollo Web</li>
+      <li>Aprendizaje constante</li>
+      <li>Diseño gráfico</li>
+      <li>Videojuegos</li>
+    </ul>
+  </section>
+
+  <!-- Tabla de habilidades -->
+  <section id="tabladehabilidades">
+    <h3>3. Tabla de habilidades</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Lograr un buen desarrollo en mi aprendizaje</th>
+          <th>Tener iniciativa propia</th>
+          <th>Demostrar interés en mis clases</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Me ayuda a poder desarrollar mis actividades con mayor facilidad.</td>
+          <td rowspan="2">Identifico los problemas.</td>
+          <td rowspan="2">Logro dar mis opiniones y resolver mis dudas.</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Tener una mejor presentación en mis trabajos.</td>
+        </tr>
+        <tr>
+          <td>Aprendo nuevas habilidades.</td>
+          <td>Poder responder a las preguntas de mi profesor.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Multimedia: audio de presentación -->
+  <section id="audiodepresentacion">
+    <h3>4. Audio de mi presentación:</h3>
+    <audio src="audio.mp3" controls>
+      Tu navegador no soporta el audio.
+    </audio>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section id="contacto">
+    <h3>5. Formulario de Contacto</h3>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required><br><br>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="0" max="120" placeholder="0" required><br><br>
+
+      <label>Género:</label>
+      <input type="radio" name="genero" value="masculino" required> Masculino
+      <input type="radio" name="genero" value="femenino" checked> Femenino
+      <input type="radio" name="genero" value="otro"> Otro<br><br>
+
+      <label for="intereses">Intereses:</label><br>
+      <select id="intereses" name="intereses" required>
+        <option value="">--Selecciona uno--</option>
+        <option value="Tecnología">Tecnología</option>
+        <option value="Ciencias">Ciencias</option>
+        <option value="Idiomas">Idiomas</option>
+        <option value="Historia">Historia</option>
+      </select><br><br>
+
+      <label for="comentarios">Comentarios:</label><br>
+      <textarea id="comentarios" name="comentarios" rows="4" cols="40" required></textarea><br><br>
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar formulario">
+    </form>
+  </section>
+
+  <!-- Pie de página con derechos y redes sociales -->
+  <footer>
+    <p>&copy; <span id="anio"></span> Bruno Josue Guzman Quincha. Todos los derechos reservados.</p>
+    <p>Puedes encontrarme en:</p>
+    <ul>
+      <li><a href="https://facebook.com" target="_blank"><Strong>Facebook</Strong></a></li>
+      <li><a href="https://youtube.com" target="_blank"><Strong>YouTube</Strong></a></li>
+    </ul>
+    <p>Como: <strong>Bruno Guzman.</strong></p>
+  </footer>
+
+  <!-- Enlace al final de la página -->
+  <a id="fin_page"></a>
+  <a href="#inicio_page"><strong>Ir al Inicio de la página</strong></a>
+
+</body>
+</html>
